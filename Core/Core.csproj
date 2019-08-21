@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FileSystemContext.cs" />
-    <Compile Include="FileSystemRepository.cs" />
+    <Compile Include="ProductRepository.cs" />
     <Compile Include="ICacheService.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="MemoryCacheService.cs" />

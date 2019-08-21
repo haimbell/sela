@@ -21,7 +21,7 @@ namespace Sela_Reprice
             container.Options.DefaultScopedLifestyle = new AsyncScopedLifestyle();
 
             //register domain services
-            container.Register<IRepository<Product>, FileSystemRepository>();
+            container.Register<IRepository<Product>, ProductRepository>();
             container.Register<ICacheService, MemoryCacheService>();
 
             //we only need ONE instance of thread timer in our website, so the lifestyle must be a singleton

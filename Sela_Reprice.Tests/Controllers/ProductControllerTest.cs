@@ -26,7 +26,7 @@ namespace Sela_Reprice.Tests.Controllers
         public async Task TestA()
         {
             // Arrange
-            ProductController controller = new ProductController(new FileSystemRepository(new FileSystemTestFactory(), new MemoryCacheService()));
+            ProductController controller = new ProductController(new ProductRepository(new FileSystemTestFactory(), new MemoryCacheService()));
             controller.Request = new HttpRequestMessage();
             controller.Configuration = new HttpConfiguration();
 
@@ -63,7 +63,7 @@ namespace Sela_Reprice.Tests.Controllers
         public async Task TestB()
         {
             // Arrange
-            ProductController controller = new ProductController(new FileSystemRepository(new FileSystemTestFactory(), new MemoryCacheService()));
+            ProductController controller = new ProductController(new ProductRepository(new FileSystemTestFactory(), new MemoryCacheService()));
             controller.Request = new HttpRequestMessage();
             controller.Configuration = new HttpConfiguration();
 
@@ -111,7 +111,7 @@ namespace Sela_Reprice.Tests.Controllers
         public async Task TestC()
         {
             // Arrange
-            ProductController controller = new ProductController(new FileSystemRepository(new FileSystemTestFactory(), new MemoryCacheService()));
+            ProductController controller = new ProductController(new ProductRepository(new FileSystemTestFactory(), new MemoryCacheService()));
             controller.Request = new HttpRequestMessage();
             controller.Configuration = new HttpConfiguration();
 

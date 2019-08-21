@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Core
 {
-    public class FileSystemRepository : IRepository<Product>
+    public class ProductRepository : IRepository<Product>
     {
         #region Data Memebers
 
@@ -36,7 +36,7 @@ namespace Core
             }
         }
 
-        public FileSystemRepository(IContextFactory contextFactory, ICacheService iCacheService)
+        public ProductRepository(IContextFactory contextFactory, ICacheService iCacheService)
         {
             _contextFactory = contextFactory;
             _iCacheService = iCacheService;
